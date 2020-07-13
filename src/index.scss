@@ -1,0 +1,28 @@
+@import "variables";
+$theme-colors: (
+        "info": #FBAB1C,
+);
+
+@import '~bootstrap/scss/bootstrap';
+
+body {
+  margin: 0;
+  font-family: $ff-roboto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  * {
+    box-sizing: border-box;
+  }
+}
+
+#root {
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}

@@ -1,0 +1,68 @@
+@import "./src/variables";
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins/_breakpoints";
+
+.formContainer {
+  position: relative;
+
+  :global {
+    .col,
+    .col-5,
+    .col-6,
+    .col-7,
+    .col-12 {
+      .form-label {
+        text-transform: uppercase;
+        font-family: $ff-roboto;
+        font-weight: 400;
+        font-size: 12px;
+        margin-bottom: 3px;
+      }
+    }
+  }
+}
+
+.title {
+  margin-bottom: 0.8em;
+}
+
+.sender {
+  margin-bottom: 2rem;
+  font-style: oblique;
+}
+
+.switch {
+  position: absolute;
+  top: 15px;
+  right: 50%;
+  transform: translateX(50%);
+}
+
+.form {
+  width: 100%;
+  margin-top: 4rem;
+}
+
+.actions {
+  margin: 2rem auto 4rem;
+}
+
+:global {
+  .btn-info {
+    width: 100%;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}
+
+.message {
+  position: static;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.submitBtn {
+  outline: none;
+}

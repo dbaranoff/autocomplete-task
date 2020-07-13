@@ -1,0 +1,27 @@
+{
+  "org_info": {
+    "logo_url": "https://firebasestorage.googleapis.com/v0/b/bluebird-234f6.appspot.com/o/YoCSEkdYFcFnAyuFXZyj%2Forg_assets%2Fbluebird_final_rev-01.png?alt=media\u0026token=af31661c-bcdf-4a22-b271-c95536efb000",
+    "header_color": "f2f2f2",
+    "button_color": "fbab1c"
+  },
+  "receiver_info": {
+    "receiver_address1": "485 w macarthur blvd unit 204",
+    "receiver_address2": "",
+    "receiver_city": "oakland",
+    "receiver_company_name": "",
+    "receiver_country": "United States",
+    "receiver_email": "",
+    "receiver_first_name": "Agent",
+    "receiver_last_name": "Smith",
+    "receiver_phone": "7031234567",
+    "receiver_state": "California",
+    "receiver_zip": "94609",
+    "receiver_address_joined": "485 w macarthur blvd\r\nunit 204, oakland, California oakland, United States"
+  },
+  "sender_info": {
+    "sender_company_name": "",
+    "sender_first_name": "John",
+    "sender_last_name": "Doe",
+    "sender_uid": "some_very_secret_user_ID"
+  }
+}

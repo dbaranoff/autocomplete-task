@@ -1,0 +1,14 @@
+export const RECEIVER_FIRST_NAME = 'receiver_first_name';
+export const RECEIVER_LAST_NAME = 'receiver_last_name';
+export const RECEIVER_COMPANY_NAME = 'receiver_company_name';
+export const RECEIVER_PHONE = 'receiver_phone';
+export const RECEIVER_ADDRESS1 = 'receiver_address1';
+export const RECEIVER_ADDRESS2 = 'receiver_address2';
+export const RECEIVER_STATE = 'receiver_state';
+export const RECEIVER_ZIP = 'receiver_zip';
+export const RECEIVER_COUNTRY = 'receiver_country';
+export const RECEIVER_CITY = 'receiver_city';
+export const RECEIVER_EMAIL = 'receiver_email';
+export const RECEIVER_ADDRESS_JOINED = 'receiver_address_joined';
+export const ORDER_ID = 'order_id';
+export const KEY = 'key';

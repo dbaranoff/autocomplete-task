@@ -1,0 +1,84 @@
+{
+  "suggestions": [
+    {
+      "street_line": "1365 1/2 13th Ave",
+      "secondary": "Apt",
+      "city": "East Moline",
+      "state": "IL",
+      "zipcode": "61244",
+      "entries": 2
+    },
+    {
+      "street_line": "1365 1/2 13th Ave",
+      "secondary": "",
+      "city": "East Moline",
+      "state": "IL",
+      "zipcode": "61244",
+      "entries": 0
+    },
+    {
+      "street_line": "1365 1/2 E 21st St",
+      "secondary": "",
+      "city": "Los Angeles",
+      "state": "CA",
+      "zipcode": "90011",
+      "entries": 0
+    },
+    {
+      "street_line": "1365 1/2 E 33rd St",
+      "secondary": "",
+      "city": "Los Angeles",
+      "state": "CA",
+      "zipcode": "90011",
+      "entries": 0
+    },
+    {
+      "street_line": "1365 1/2 Franklin St",
+      "secondary": "",
+      "city": "Johnstown",
+      "state": "PA",
+      "zipcode": "15905",
+      "entries": 0
+    },
+    {
+      "street_line": "1365 1/2 Maltman Ave",
+      "secondary": "",
+      "city": "Los Angeles",
+      "state": "CA",
+      "zipcode": "90026",
+      "entries": 0
+    },
+    {
+      "street_line": "1365 1/2 Michigan Ave W",
+      "secondary": "Apt",
+      "city": "Battle Creek",
+      "state": "MI",
+      "zipcode": "49037",
+      "entries": 3
+    },
+    {
+      "street_line": "13-65 Comerford Pl",
+      "secondary": "",
+      "city": "Fair Lawn",
+      "state": "NJ",
+      "zipcode": "07410",
+      "entries": 0
+    },
+    {
+      "street_line": "13-65 Lyle Ter",
+      "secondary": "",
+      "city": "Fair Lawn",
+      "state": "NJ",
+      "zipcode": "07410",
+      "entries": 0
+    },
+    {
+      "street_line": "136-5 Bda Felix Cordova Davila",
+      "secondary": "",
+      "city": "Manati",
+      "state": "PR",
+      "zipcode": "00674",
+      "entries": 0
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins/_breakpoints";
+
+.container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 20px;
+  background: white;
+  border: 2px solid transparent;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+
+  //@include media-breakpoint-up(sm) {
+  //  width: 20px;
+  //  height: 50px;
+  //}
+}
+
+.formSwitch {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0;
+  position: relative;
+}
+
+.input {
+  position: absolute;
+  z-index: -10;
+  top: -9999px;
+  left: -9999px;
+  visibility: hidden;
+
+  &:checked {
+    ~ .toggle {
+      transform: translate(0, -50%);
+
+      //@include media-breakpoint-up(sm) {
+      //  transform: translate(-50%, 0%);
+      //}
+    }
+  }
+
+  &:not(:checked) {
+    ~ .toggle {
+      transform: translate(-100%, -50%);
+
+      //@include media-breakpoint-up(sm) {
+      //  transform: translate(-50%, -100%);
+      //}
+    }
+  }
+}
+
+.toggle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: all 0.5s ease;
+}
+
+.label {
+  white-space: pre;
+  position: absolute;
+  left: auto;
+  right: 50%;
+  bottom: calc(100% + 5px);
+  transform: translate(50%, -50%);
+  font-size: 12px;
+  transition: all 0.5s ease;
+
+  //@include media-breakpoint-up(sm) {
+  //  font-size: 14px;
+  //  right: auto;
+  //  bottom: auto;
+  //  left: 100%;
+  //  transform: translate(20px, -50%);
+  //}
+}
+

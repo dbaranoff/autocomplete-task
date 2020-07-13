@@ -1,0 +1,15 @@
+.notFound {
+  margin: auto;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  font-size: 12vw;
+  padding-bottom: 25vw;
+  text-shadow: 7vw -10vw 15px rgba(0, 0, 0, 0.16);
+}
+
+.message {
+  font-size: 3vw;
+  font-weight: 300;
+  text-align: center;
+}
