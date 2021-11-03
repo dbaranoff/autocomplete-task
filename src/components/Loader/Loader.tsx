@@ -10,20 +10,16 @@ type Props = {
 };
 
 export default ({ isLoading = false, fullScreen = false }: Props) => {
-  const [show, setShow] = React.useState(true);
-
-  React.useEffect(() => {setShow(isLoading);},[isLoading]);
-
-  const transitions = useTransition(show, null, {
+  const transitions = useTransition(isLoading, null, {
     from: { position: 'absolute', opacity: 0 },
     enter: { opacity: 1 },
     leave: { opacity: 0 },
   });
 
   return <React.Fragment>
-    {transitions.map(({ item, key, props }, i) =>
+    {transitions.map(({ item, key, props }) =>
       item && (
-        <div key={`loading-${i}`} className={cn(styles.loaderContainer, { [styles.fullScreen]: fullScreen })}>
+        <div key={`loading-${key}`} className={cn(styles.loaderContainer, { [styles.fullScreen]: fullScreen })}>
           <animated.div className={styles.loader} key={key} style={props}>
             <div className={styles.dot} />
             <div className={styles.dot} />

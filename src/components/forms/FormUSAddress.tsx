@@ -25,7 +25,7 @@ export default ({ form, className }: Props) => {
             name="receiver_first_name"
             onChange={form.handleChange}
             onBlur={form.handleBlur}
-            value={form.values.receiver_first_name}
+            value={form.values.receiver_first_name || ''}
           />
         </Col>
 
@@ -36,7 +36,7 @@ export default ({ form, className }: Props) => {
             name="receiver_last_name"
             onChange={form.handleChange}
             onBlur={form.handleBlur}
-            value={form.values.receiver_last_name}
+            value={form.values.receiver_last_name || ''}
           />
         </Col>
       </Form.Row>
@@ -49,7 +49,7 @@ export default ({ form, className }: Props) => {
             name="receiver_phone"
             onChange={form.handleChange}
             onBlur={form.handleBlur}
-            value={form.values.receiver_phone}
+            value={form.values.receiver_phone || ''}
           />
         </Col>
       </Form.Row>

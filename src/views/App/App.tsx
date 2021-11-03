@@ -90,46 +90,47 @@ function App({ render }: IProps) {
 
   return (
     <React.Fragment>
-      {isLoading ? <Loader isLoading /> : (
-        <React.Fragment>
-          <Container fluid className={styles.AppHeader} style={{ backgroundColor: getColor(header_color) }}>
-            <Container>
-              <Row>
-                <Col xs={5} sm={4} md={3} lg={2}>
-                  <a href="https://bluebird.cx">
-                    <img src={logo_url || '/logo.svg'} alt="" className="brand-logo"/>
-                  </a>
-                </Col>
-              </Row>
-            </Container>
-          </Container>
-          <Container className={styles.AppWrapper}>
-            <Row className={styles.contentRow}>
-              <Col xs={12} className={styles.contentWrapper}>
-                {render({
-                    userData,
-                    update,
-                    queryData,
-                    error,
-                    isLoading,
-                    setError,
-                    startLoading,
-                    stopLoading,
-                  })}
+    <Loader isLoading={isLoading} fullScreen />
+    {!isLoading && (
+      <React.Fragment>
+        <Container fluid className={styles.AppHeader} style={{ backgroundColor: getColor(header_color) }}>
+          <Container>
+            <Row>
+              <Col xs={5} sm={4} md={3} lg={2}>
+                <a href="https://bluebird.cx">
+                  <img src={logo_url || '/logo.svg'} alt="" className="brand-logo"/>
+                </a>
               </Col>
             </Row>
           </Container>
-          <Container fluid className={styles.AppFooter}>
-            <Container>
-              <Row>
-                <Col xs={12}>
-                  Powered by <a href="https://bluebird.cx">bluebird.cx</a>. All rights reserved
-                </Col>
-              </Row>
-            </Container>
+        </Container>
+        <Container className={styles.AppWrapper}>
+          <Row className={styles.contentRow}>
+            <Col xs={12} className={styles.contentWrapper}>
+              {render({
+                userData,
+                update,
+                queryData,
+                error,
+                isLoading,
+                setError,
+                startLoading,
+                stopLoading,
+              })}
+            </Col>
+          </Row>
+        </Container>
+        <Container fluid className={styles.AppFooter}>
+          <Container>
+            <Row>
+              <Col xs={12}>
+                Powered by <a href="https://bluebird.cx">bluebird.cx</a>. All rights reserved
+              </Col>
+            </Row>
           </Container>
-        </React.Fragment>
-      ) }
+        </Container>
+      </React.Fragment>
+    )}
     </React.Fragment>
   );
 }
