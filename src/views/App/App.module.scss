@@ -6,12 +6,25 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   margin-bottom: 1.5rem;
+  background: rgba(255, 205, 167, 0.42);
 }
 
 .AppWrapper {
   flex: 1;
   display: flex;
   flex-flow: column;
+}
+
+.logo {
+  max-width: 3vw;
+  display: flex;
+  align-items: center;
+  color: #000;
+
+  img {
+    max-width: 100%;
+    margin-right: 10px;
+  }
 }
 
 .contentRow {

@@ -14,7 +14,7 @@ export const init = ({ order_id, key } : IInitRequest): Promise<void | IGetInitR
 
 export const saveAddress = ({ values }: IPostUpdateRequest): Promise<any> => {
   return axios
-    .post(`${apiUrl}${endpoints.updateAddress}`, values)
+    .post(`${apiUrl}${endpoints.update}`, values)
     .then(response => {
       return response;
     })

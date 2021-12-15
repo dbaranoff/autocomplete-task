@@ -9,7 +9,6 @@ import { init, saveAddress } from '../../api/request';
 import { IInitRequest } from '../../types/shipping';
 import { routes } from '../../constants/routes';
 import Loader from '../../components/Loader/Loader';
-import { getColor } from '../../util/helpers';
 
 // For test app only
 import mockUserData from '../../mocks/userdata.json';
@@ -41,9 +40,7 @@ function App({ render }: IProps) {
   React.useEffect(() => {
     const search: any = qs.parse(location.search);
 
-    if (!search || !(search.order_id && search.key)) {
-      // history.push(routes.notFound);
-
+    if (!search || !(search.key)) {
       setUserData(mockUserData); // Using this mock just for test
 
       stopLoading();
@@ -81,24 +78,18 @@ function App({ render }: IProps) {
     stopLoading();
   }, [userData]);
 
-  const { logo_url, header_color } = React.useMemo(() => {
-    if (userData) {
-      return userData.org_info
-    }
-    return { logo_url: undefined, header_color: undefined };
-  }, [userData]);
-
   return (
     <React.Fragment>
     <Loader isLoading={isLoading} fullScreen />
     {!isLoading && (
       <React.Fragment>
-        <Container fluid className={styles.AppHeader} style={{ backgroundColor: getColor(header_color) }}>
+        <Container fluid className={styles.AppHeader}>
           <Container>
             <Row>
               <Col xs={5} sm={4} md={3} lg={2}>
-                <a href="https://bluebird.cx">
-                  <img src={logo_url || '/logo.svg'} alt="" className="brand-logo"/>
+                <a href="https://example.com" className={styles.logo}>
+                  <img src={'/logo.svg'} alt=""/>
+                  Example.com
                 </a>
               </Col>
             </Row>
@@ -124,7 +115,7 @@ function App({ render }: IProps) {
           <Container>
             <Row>
               <Col xs={12}>
-                Powered by <a href="https://bluebird.cx">bluebird.cx</a>. All rights reserved
+                Powered by <a href="https://example.com">example.com</a>. All rights reserved
               </Col>
             </Row>
           </Container>

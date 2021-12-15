@@ -8,9 +8,9 @@ type Props = {
 
 export default ({ show, children }: Props) => {
   const transitions = useTransition(show, null, {
-    from: { position: 'absolute', transform: 'translateX(-150%) scale(1)', zIndex: 1 },
-    enter: { position : 'relative', transform: 'translateX(0) scale(1)', zIndex: 1 },
-    leave: { position: 'absolute', transform: 'translateX(0) scale(0)', zIndex: 1 },
+    from: { position: 'absolute', opacity: 0, transform: 'translate3d(-100%,0,0)' },
+    enter: { position: 'relative', opacity: 1, transform: 'translate3d(0%,0,0)' },
+    leave: { position: 'absolute', opacity: 0, transform: 'translate3d(50%,0,0)' },
   });
 
   return (
