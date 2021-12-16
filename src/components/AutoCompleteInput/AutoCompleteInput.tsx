@@ -9,12 +9,14 @@ interface IProps {
   onReset: () => void;
 }
 
-export default ({ onSelect, onReset }: IProps) => (
-  <label htmlFor="autocomplete-input">
-    Best Mailing Address
-    <input type="text" id="autocomplete-input" className={styles.input} />
-  </label>
-);
+export default ({ onSelect, onReset }: IProps) => {
+  return (
+    <label htmlFor="autocomplete-input">
+      Best Mailing Address
+      <input type="text" id="autocomplete-input" className={styles.input} />
+    </label>
+  )
+};
 
 // FIXME: the objectives are the following:
 //  1. Implement the AutoCompleteInput field with CSS module similar to the existing style schema
